@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AlcoVol</string>
+    <string name="question1">Please enter your name:</string>
+    <string name="question2">Please choose your gender:</string>
+    <string name="question3">Please choose your weight:</string>
+    <string name="gender_male">male</string>
+    <string name="gender_female">female</string>
+    <string name="seekbar_weight_text">weight</string>
+    <string name="nextButton">Next</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="question4">How much did You drink?</string>
+    <string name="question5">Alcohol by Volume</string>
+    <string name="question6">How many hours ago?</string>
+    <string name="result0">Here is your BAC:</string>
+    <string name="result1">How drunk are You?</string>
+    <string name="newdrinkButton">New Drink</string>
+    <string name="hadenoughButton">Had enough</string>
+</resources>

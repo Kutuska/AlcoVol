@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#0b74de"
+    tools:context="com.kutuska.android.alcovol.MainMenu">
+
+    <TextView
+        android:id="@+id/nameres"
+        android:layout_width="wrap_content"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/weightres"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/nameres"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/genderres"
+        android:layout_width="wrap_content"
+        android:textSize="30sp"
+        android:layout_below="@id/weightres"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:background="#58a0e7"
+        android:layout_below="@id/genderres"
+        android:layout_marginTop="35dp"
+        android:layout_width="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="300dp"
+        android:id="@+id/questions2">
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/question4"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="ml"
+                    android:inputType="number"
+                    android:id="@+id/alcMlid" />
+                <TextView
+                    android:text="@string/question5"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="alc. %"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/abvid" />
+                <TextView
+                    android:text="@string/question6"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="in hours"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/etid" />
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:id="@+id/saveAlcoholButton"
+        android:text="@string/nextButton"
+        android:layout_below="@id/questions2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
