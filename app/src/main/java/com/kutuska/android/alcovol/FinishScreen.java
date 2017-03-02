@@ -3,6 +3,8 @@ package com.kutuska.android.alcovol;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import java.util.concurrent.TimeUnit;
 
@@ -12,12 +14,20 @@ public class FinishScreen extends AppCompatActivity {
     private TextView countdown;
     private double ebacresult;
     private long countdowntime;
+    private Button goHomeButton;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_finish_screen);
+
+        setUpTimer();
+
+
+    }
+    public void setUpTimer(){
+        goHomeButton = (Button) findViewById(R.id.gohomebutton);
         Bundle extras = getIntent().getExtras();
         if(extras != null){
             countdown = (TextView) findViewById(R.id.counter);
@@ -42,5 +52,11 @@ public class FinishScreen extends AppCompatActivity {
                 }
             }.start();
         }
+        goHomeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }

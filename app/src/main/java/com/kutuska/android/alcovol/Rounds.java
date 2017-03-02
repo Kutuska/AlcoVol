@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainMenu extends AppCompatActivity {
+public class Rounds extends AppCompatActivity {
 
     private TextView nameresult, weightresult, genderresult;
     private EditText alcMlText, abvText, timeText;
@@ -26,7 +26,7 @@ public class MainMenu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_menu);
+        setContentView(R.layout.activity_rounds);
 
         setItUp();
         getThings();
@@ -93,7 +93,7 @@ public class MainMenu extends AppCompatActivity {
                     bac += probac;
                     ebac = bac - (et * 0.015);
                 }
-                Intent u = new Intent(MainMenu.this, Results.class);
+                Intent u = new Intent(Rounds.this, Results.class);
                 u.putExtra("ebac", ebac);
                 startActivityForResult(u, 1);
             }

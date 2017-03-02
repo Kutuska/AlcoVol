@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#0b74de"
-    tools:context="com.kutuska.android.alcovol.MainMenu">
+    tools:context="com.kutuska.android.alcovol.Rounds">
 
     <TextView
         android:id="@+id/nameres"

@@ -15,4 +15,5 @@
     <string name="result1">How drunk are You?</string>
     <string name="newdrinkButton">New Drink</string>
     <string name="hadenoughButton">Had enough</string>
+    <string name="gohome">Go home</string>
 </resources>

@@ -20,5 +20,13 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:id="@+id/gohomebutton"
+        android:layout_width="wrap_content"
+        android:text="@string/gohome"
+        android:layout_below="@id/counter"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
 
 </RelativeLayout>

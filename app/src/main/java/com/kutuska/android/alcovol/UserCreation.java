@@ -13,8 +13,6 @@ import android.widget.TextView;
 import android.content.*;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
 public class UserCreation extends AppCompatActivity {
 
     private RadioGroup genderGroup;
@@ -29,7 +27,7 @@ public class UserCreation extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_user_creation);
 
         setUp();
 
@@ -62,7 +60,7 @@ public class UserCreation extends AppCompatActivity {
                     return;
                 }
                 userName = editName.getText().toString();
-                Intent i = new Intent(UserCreation.this, MainMenu.class);
+                Intent i = new Intent(UserCreation.this, Rounds.class);
                 i.putExtra("userWeight",weight);
                 i.putExtra("userName",userName);
                 i.putExtra("userGender",userGender);
